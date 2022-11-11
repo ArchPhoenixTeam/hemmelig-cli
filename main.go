@@ -70,7 +70,7 @@ func main() {
 			},
 			&cli.StringFlag{
 				Name:    "url",
-				Value:   "https://hemmelig.app/",
+				Value:   "https://secretshare.archphoenix.team/",
 				Usage:   "Override the Hemmelig app URL if you host it yourself",
 				Aliases: []string{"u"},
 			},
