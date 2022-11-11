@@ -1,6 +1,6 @@
 # Hemmelig CLI
 
-With this CLI you can use the API from [https://hemmelig.app](https://hemmelig.app) to create secret URLs on the fly.
+With this CLI you can use the API from Hemmelig to create secret URLs on the fly.
 
 ## Features
 
@@ -10,8 +10,6 @@ With this CLI you can use the API from [https://hemmelig.app](https://hemmelig.a
 - Override the URL if you host Hemmelig yourself
 
 ## Usage
-
-Install the binary (windows, osx, linux) from <https://github.com/HemmeligOrg/hemmelig-cli/releases>, or go directly to the build the binary manually step.
 
 ```bash
 # Example
@@ -33,7 +31,7 @@ COMMANDS:
 GLOBAL OPTIONS:
    --password value, -p value  Set a password to protect the secret
    --ttl value, -t value       Secret expiration time in seconds. 0 - 605800 seconds. (default: "14400")
-   --url value, -u value       Override the Hemmelig app URL if you host it yourself (default: "https://hemmelig.app/")
+   --url value, -u value       Override the Hemmelig app URL if you host it yourself (default: "https://secretshare.archphoenix.team/")
    --help, -h                  show help (default: false)
 
 COPYRIGHT:
