@@ -9,36 +9,7 @@ With this CLI you can use the API from Hemmelig to create secret URLs on the fly
 - Adjust the time to live (TTL) for the secret
 - Override the URL if you host Hemmelig yourself
 
-## Usage
-
-```bash
-# Example
-cat your_secret_file.txt | hemmelig --password=cantguessthislol
-# The secret URL: https://hemmelig.app/secret/0-ii79E5tViCv6OBPEmzC/talented_RU4NfXNvxTLJAf1R_QFtp
-```
-
-```bash
-NAME:
-   [he`m:(ə)li] - Create a secret URL directly from your CLI.
-
-USAGE:
-   cat your_secret_file.txt | hemmelig --password=cantguessthislol
-   Or just pass it as the first argument: hemmelig "This is my secret" --password=secret
-
-COMMANDS:
-   help, h  Shows a list of commands or help for one command
-
-GLOBAL OPTIONS:
-   --password value, -p value  Set a password to protect the secret
-   --ttl value, -t value       Secret expiration time in seconds. 0 - 605800 seconds. (default: "14400")
-   --url value, -u value       Override the Hemmelig app URL if you host it yourself (default: "https://secretshare.archphoenix.team/")
-   --help, -h                  show help (default: false)
-
-COPYRIGHT:
-   (c) 2022 Hemmelig.app
-```
-
-## Get it up and running [DEV]
+## Get it up and running
 
 ```bash
 # Install dependencies
@@ -70,3 +41,33 @@ Use this tool at your own risk. The owner of this repository is not responsible 
 ## LICENSE
 
 See [LICENSE](./LICENSE)
+
+## Usage
+
+```bash
+# Example
+cat your_secret_file.txt | hemmelig --password=cantguessthislol
+# The secret URL: https://secretshare.archphoenix.team/secret/0-ii79E5tViCv6OBPEmzC/talented_RU4NfXNvxTLJAf1R_QFtp
+```
+
+```bash
+NAME:
+   [he`m:(ə)li] - Create a secret URL directly from your CLI.
+
+USAGE:
+   cat your_secret_file.txt | hemmelig --password=cantguessthislol
+   Or just pass it as the first argument: hemmelig "This is my secret" --password=secret
+
+COMMANDS:
+   help, h  Shows a list of commands or help for one command
+
+GLOBAL OPTIONS:
+   --password value, -p value  Set a password to protect the secret
+   --ttl value, -t value       Secret expiration time in seconds. 0 - 605800 seconds. (default: "14400")
+   --url value, -u value       Override the Hemmelig app URL if you host it yourself (default: "https://secretshare.archphoenix.team/")
+   --help, -h                  show help (default: false)
+
+COPYRIGHT:
+   (c) 2022 Hemmelig.app
+```
+
